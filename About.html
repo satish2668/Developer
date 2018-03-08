@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body
+style="background-color:powderblue;">
+	<div id="nav1">
+<a href="About.html"> <h1> Orphanage </h1></a>
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="About.html">About</a></li>
+	<li><a href="services.html">Service</a></li>
+	<li><a href="Contact.html">Gallery</a></li>
+	<li><a href="Contact.html">Contact</a></li>
+</ul>
+</div>
+	
+	<title>About / Orphanage</title>
+	
+		<h1>About</h1>
+		<font color="black">
+				<body ng-app="myApp">
+			<a href="#!Established">Established</a>
+			<p>Orphanage:<br> A conglomerate of KKC incorpoeraeted with the registar of firms It take us immense pride to elucidate about the reflections of KKC over a dacade ever since its inception by creating new horizons.</p>
+<a href="#!GroupMemebers">GroupMemebers</a>
+<p>The Preamble:<br>
+With outstanding business acumen KKC was able to synergize different projects and rendered services in manfolds,by way of strategic planning and implementation of support system.
+This legacy continues emphasizing on KKC projects and solutions with the insight of making a Gate way to the golden era of make in India concept.
+It was only because of our meticulous planning and diligent efforts to organize and execute the KKC projects in the stipulated time, we could stand up to the clients expectations. We Are strong in our conviction and commitment. Since we have team of professionals. We have become the role models in achieving the targets assigned by renowned corporate.
+Our technical mettle ascribes micro & macro calculative specifications for accuracy in terms of Planning,designing,quality and quantity standards in ambience and synchronized mechanism for outstanding performance.
+
+Our Vision
+To inundate the applications of sustainable design principles. To consistently deliver eco-friendly finishes in the interior designs and to create an ambience that will echo the desires of our clients and bring to life their life style in harmony with flooring.
+Psychological Instinct
+Maslow theory of human needs ascribes about the everlasting needs and wants of mankind, such as Desires,ambitions,passion and fantasies of life in a broader perspective. Phenomenally it Relents to the theory of behavioral science and management.
+On the contracy there are certain apprehensions about the human tendency to evaluate the situations in the context of social stigma of life, on the other hand it leads to a negative approach and builds the inertia of ambiguity, breach of trust, ego, relectance,lethargy and so on in the ambit of analyzing the sanctity of the particular situation.
+Psychologically the essence of human life depends on the contemporary situations and believes on the hypothesis of inculcating optimistic values.</p>
+<a href="#!Team">Team</a>
+
+<div ng-view></div>
+
+<script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "main.htm"
+    })
+    .when("/Established", {
+        templateUrl : "Established.html"
+    })
+    .when("/Group Memebers", {
+        templateUrl : "GroupMemebers.html"
+    })
+    .when("/Team", {
+        templateUrl : "Team.html"
+    });
+});
+</script>
+
+		
+
+
+ 
+</body>
+</html>
